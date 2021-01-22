@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "ex4plus"
+  "defaultProject": "ex4plus",
+  "cli": {
+    "analytics": "040beda2-e46c-44a4-9de3-dd863090f2b1"
+  }
 }

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ex4plus';
+  public static title = 'ex4plus';
+  show = false;
+  toggle(){
+    this.show = !this.show
+    
+  }
 }
