@@ -1,0 +1,13 @@
+#instance {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+#instance td, #instance th {
+    border: 1px solid #ddd;
+}
+#instance tr:nth-child(even){background-color: #f2f2f2;}
+#instance tr:hover {background-color: #ddd;}
+#instance th {
+    text-align: left;
+  }
+  

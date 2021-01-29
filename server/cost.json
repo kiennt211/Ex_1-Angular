@@ -1,0 +1,67 @@
+{
+    "Cost": [{
+    "monthToDate": "$2300.97",
+    "estimateSpend": "$2624.49",
+    "lastMonth": "$285.42",
+    "changeFromLastMonth": "$2339.08"
+  }],
+  "serviceBreakdown":[{
+    "serviceType": "EC2",
+    "cost": "1500"
+  },
+  {
+    "serviceType": "EFS",
+    "cost": "1000"
+  },
+  {
+    "serviceType": "S3",
+    "cost": "1000"
+  },
+  {
+    "serviceType": "Support",
+    "cost": "2000"
+  },
+  {
+    "serviceType": "Others",
+    "cost": "50"
+  }
+  ],
+  "listInstance": [{
+    "instanceType": "T2.MEDIUM",
+    "onDemandHours": 1100,
+    "reservedHours": 0,
+    "totalHours": 1100,
+    "coverage": 0
+  },{
+    "instanceType": "T2.NANO",
+    "onDemandHours": 2184,
+    "reservedHours": 0,
+    "totalHours": 1021,
+    "coverage": 0
+  },{
+    "instanceType": "T2.LARGE",
+    "onDemandHours": 1000,
+    "reservedHours": 0,
+    "totalHours": 1000,
+    "coverage": 0
+  },{
+    "instanceType": "M4.LARGE",
+    "onDemandHours": 600,
+    "reservedHours": 0,
+    "totalHours": 600,
+    "coverage": 0
+  },{
+    "instanceType": "M3.MEDIUM",
+    "onDemandHours": 600,
+    "reservedHours": 0,
+    "totalHours": 600,
+    "coverage": 0
+  },{
+    "instanceType": "T2.SMALL",
+    "onDemandHours": 2754,
+    "reservedHours": 0,
+    "totalHours": 2754,
+    "coverage": 0
+  }
+  ]
+}

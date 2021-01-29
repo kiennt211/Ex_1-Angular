@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "EX4"
+  "defaultProject": "EX4",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,19 @@
+<h3 style ="color:rgb(0, 81, 255)"> RESERVATION COVERAGE</h3>
+<table id= "instance">
+    <tr style="font-weight: normal">
+      <th>INSTANCE TYPE</th>
+      <th>ON DEMAND HOURS</th>
+      <th>RESERVED HOURS</th>
+      <th>TOTAL HOURS</th>
+      <th>COVERAGE</th>
+    </tr>
+    <tbody>
+    <tr *ngFor = "let instance1 of instances">
+      <td><span style="text-align: left">{{instance1.instanceType}}</span></td>
+      <td><span style="color:red; text-align: right" text-align: left>{{instance1.onDemandHours}}</span></td>
+      <td><span style="color:green; text-align: right">{{instance1.reservedHours}}</span></td>
+      <td><span style=" text-align: right">{{instance1.totalHours}}</span></td>
+      <td><span style=" text-align: right">{{instance1.coverage}}%</span></td>
+    </tr>
+</tbody>
+</table>

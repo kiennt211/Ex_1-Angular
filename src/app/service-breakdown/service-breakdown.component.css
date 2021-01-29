@@ -1,0 +1,16 @@
+#service {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#service td, #service th {
+    border: 1px solid #ddd;
+}
+#service tr:nth-child(even){background-color: #f2f2f2;}
+#service tr:hover {background-color: #ddd;}
+#service th {
+    text-align: left;
+    background-color: white;
+    color: black;
+  }
+  

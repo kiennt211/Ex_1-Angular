@@ -1,0 +1,13 @@
+<h3 style ="color:rgb(0, 81, 255)"> RESERVATION COVERAGE</h3>
+<table id= "service">
+    <tbody>
+    <tr *ngFor = "let service of services">
+      <td><span style="text-align: left">{{service.serviceType}}</span></td>
+      <td><span style="text-align: left">{{service.cost}}</span></td>
+    </tr>
+    <tr>
+      <td><span style="text-align: left; font-weight: bold">Total</span></td>
+      <td><span style="text-align: left">{{total}}</span></td>
+    </tr>
+</tbody>
+</table>
