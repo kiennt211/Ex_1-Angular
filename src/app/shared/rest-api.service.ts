@@ -4,6 +4,7 @@ import { Instance } from '../shared/instance';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { Cost } from '../shared/cost';
+import { ServiceBreakdown } from './service-breakdown';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +21,7 @@ export class RestApiService {
     })
   }  
   getInstances(): Observable<Instance> {
-    return this.http.get<Instance>(this.apiURL + '/instance')
+    return this.http.get<Instance>(this.apiURL + '/listInstance')
     .pipe(
       retry(1),
       catchError(this.handleError)
@@ -29,7 +30,7 @@ export class RestApiService {
 
   // HttpClient API get() method => Fetch employee
   getEmployee(instanceType: string): Observable<Instance> {
-    return this.http.get<Instance>(this.apiURL + '/instance/' + instanceType)
+    return this.http.get<Instance>(this.apiURL + '/listInstance/' + instanceType)
     .pipe(
       retry(1),
       catchError(this.handleError)
@@ -37,12 +38,20 @@ export class RestApiService {
   } 
   
   getCost(): Observable<Cost> {
-    return this.http.get<Cost>(this.apiURL + '/cost')
+    return this.http.get<Cost>(this.apiURL + '/Cost')
     .pipe(
       retry(1),
       catchError(this.handleError)
     )
-}    // Error handling 
+}    
+getServiceBreakdown(): Observable<ServiceBreakdown> {
+  return this.http.get<ServiceBreakdown>(this.apiURL + '/serviceBreakdown')
+  .pipe(
+    retry(1),
+    catchError(this.handleError)
+  )
+}    
+// Error handling 
     handleError(error: { error: { message: string; }; status: any; message: any; }) {
       let errorMessage = '';
       if(error.error instanceof ErrorEvent) {

@@ -1,12 +1,22 @@
-<hello name="{{ name }}"></hello>
+<!-- <hello name="{{ name }}"></hello> -->
+<div style="padding-left: 50px; padding-right: 50px;">
 <p>
-  Press the button below :)
+  Press the button below :))
 </p>
-<button (click)="toggle()">COSTING</button>
-<div *ngIf="show == true else notShow">
-<app-cost-over-view></app-cost-over-view>
-  <br>
-  <br>
-  <p>BAR CHART</p>
+<p (click)="toggle()"><i class="fas" [ngClass]="{'fa-caret-right': down===false,'fa-caret-down': down===true}"></i>Costing</p>
+<div *ngIf="show == false else notShow">
+<app-cost-over-view ></app-cost-over-view>
+<br>
+<br>
+<div fxLayout="row">
+    <app-service-breakdown fxFlex="55%" ></app-service-breakdown>
+    <app-piechart fxFlex="45%" ></app-piechart>
+</div>
+<div fxLayout="row" >
+    <app-instance-list fxFlex="55%" ></app-instance-list>
+    <p fxFlex="5%"></p>
+    <app-bar-chart fxFlex="40%" ></app-bar-chart>
+</div>
 </div>
 <ng-template #notShow> </ng-template>
+

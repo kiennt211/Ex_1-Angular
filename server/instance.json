@@ -1,36 +1,36 @@
 {
     "listInstance": [{
-      "instanceType": "T2.MEDIUM",
+      "instanceType": "t2.medium",
       "onDemandHours": 1021,
       "reservedHours": 0,
       "totalHours": 1021,
       "coverage": 0
     },{
-      "instanceType": "T2.NANO",
+      "instanceType": "t2.nano",
       "onDemandHours": 2184,
       "reservedHours": 0,
       "totalHours": 1021,
       "coverage": 0
     },{
-      "instanceType": "T2.LARGE",
+      "instanceType": "t2.large",
       "onDemandHours": 1283,
       "reservedHours": 0,
       "totalHours": 1283,
       "coverage": 0
     },{
-      "instanceType": "M4.LARGE",
+      "instanceType": "t4.large",
       "onDemandHours": 5,
       "reservedHours": 0,
       "totalHours": 5,
       "coverage": 0
     },{
-      "instanceType": "M3.MEDIUM",
+      "instanceType": "t3.medium",
       "onDemandHours": 2,
       "reservedHours": 0,
       "totalHours": 2,
       "coverage": 0
     },{
-      "instanceType": "T2.SMALL",
+      "instanceType": "t2.small",
       "onDemandHours": 2754,
       "reservedHours": 0,
       "totalHours": 2754,

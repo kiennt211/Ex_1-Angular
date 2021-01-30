@@ -1,1 +1,2 @@
-<p>cost-over-view works!</p>
+<div id="cost" *ngFor = "let Cost of Cost">  {{Cost.monthToDate}} {{Cost.estimateSpend}} {{Cost.lastMonth}} <span style="color:red">{{Cost.changeFromLastMonth}}</span></div>
+<div id="note">MONTH TO DATE<span style="display:inline-block; width: 155px;"></span>ESTIMATE SPEND<span style="display:inline-block; width: 175px;"></span>LAST MONTH <span style="display:inline-block; width: 150px;"></span>CHANGE FROM LAST MONTH</div>

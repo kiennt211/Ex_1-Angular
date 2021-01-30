@@ -1,0 +1,16 @@
+<h3 style ="color:rgb(0, 81, 255); font-size: 15px !important"> RESERVATION COVERAGE</h3>
+<table id= "service">
+    <tbody>
+    <tr *ngFor = "let service of services">
+      <div fxLayout="row" fxLayoutGap = "16px">
+        <div class="square" [ngStyle] = "{'background-color': service['color']}"></div>
+        <td>{{service.serviceType}}</td>
+      </div>
+        <td style="text-align: right; padding: 5px">${{service.cost}}</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold; padding: 5px">Total</td>
+      <td style="text-align: right">${{total}}</td>
+    </tr>
+</tbody>
+</table>

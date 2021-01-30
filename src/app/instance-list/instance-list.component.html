@@ -1,1 +1,19 @@
-<p>instance-list works!</p>
+<h3 style ="color:rgb(0, 81, 255);font-size: 15px !important"> RESERVATION COVERAGE</h3>
+<table id= "instance">
+    <tr >
+      <th style ="font-weight: 400 !important">INSTANCE TYPE</th>
+      <th style ="font-weight: 400 !important">ON DEMAND HOURS</th>
+      <th style ="font-weight: 400 !important">RESERVED HOURS</th>
+      <th style ="font-weight: 400 !important">TOTAL HOURS</th>
+      <th style ="font-weight: 400 !important">COVERAGE</th>
+    </tr>
+    <tbody>
+    <tr *ngFor = "let instance1 of instances">
+      <td style=" text-align: left;padding: 5px">{{instance1.instanceType}}</td>
+      <td><span style="color:red" >{{instance1.onDemandHours}}</span></td>
+      <td><span style="color:green">{{instance1.reservedHours}}</span></td>
+      <td>{{instance1.totalHours}}</td>
+      <td>{{instance1.coverage}}%</td>
+    </tr>
+</tbody>
+</table>
