@@ -3,5 +3,5 @@ export class Instance {
   onDemandHours?: number;
   reservedHours?: number;
   totalHours?: number;
-  coverage?: string;
+  coverage?: number;
 }

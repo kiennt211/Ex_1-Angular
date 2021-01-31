@@ -1,0 +1,5 @@
+Day 1: Vẽ UML Diagram + tìm hiểu về thư viện Google Chart và cách sử dụng json server
+Day 2: Thiết kế tổng quan 3 component
+Day 3: Xây dựng json server trả về các giá trị tương ứng
+Day 4: Chỉnh sửa lại để giống mẫu nhất có thể
+Day 5: Sửa lỗi theo yêu cầu
